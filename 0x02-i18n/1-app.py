@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""A simple flask application
+"""Flask application with Babel integration.
 """
 
 
@@ -9,7 +9,7 @@ from flask_babel import Babel
 
 class Config(object):
     """
-    Sets Babel's default locale
+    Configuration class to set Babel's default locale
 
     Returns:
             _type_: _description_
@@ -27,7 +27,7 @@ babel = Babel(app)
 
 @app.route('/')
 def index():
-    """rendered HTML index page
+    """Route for the index page
     """
     return render_template('1-index.html')
 
